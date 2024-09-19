@@ -1,0 +1,407 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #121127;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#services{
+    margin-top: 7em;
+    padding: 1em 2em; 
+}
+
+
+#partners{
+    padding: 1em 2em; 
+}
+
+#about-us{
+    padding: 1em 2em; 
+}
+
+/* Flex the navhead and justify content */
+.navhead {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1em 2em; 
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* When fixed  scrolling */
+.navhead.fixed {
+    position: fixed;
+}
+
+/* Hidden state */
+.navhead.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+/* Visible state */
+.navhead.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Flex the nav-links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #121127B8;
+}
+
+/* Style the 'Schedule Meeting' button */
+.nav-links .schedule-btn {
+    background-color: #005DFD;
+    padding: 8px 24px;
+    border-radius: 6px;
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Add hover effect for the button */
+.nav-links .schedule-btn:hover {
+    background-color: #0048c1; /* Slightly darker shade on hover */
+}
+
+
+.billboard{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.content-1 h1{
+    font-weight: 700;
+    font-size: 56px;
+    color: #121127;
+    line-height: 67.2px;
+    width: 428px;
+}
+
+.content-1 p{
+font-weight: 400;
+font-size: 20px;
+padding: 1.2em 0;
+width: 456px;
+color: #121127B8;
+}
+
+.content-1 a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #005DFD;
+    padding: 14px 32px;
+    border: 1px solid #005DFD;
+    border-radius: 8px;
+    margin-top: 2em;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.content-2 img{
+    height: 500px;
+    width: 750px;
+}
+
+.mini-boards{
+    display: flex;
+    align-items: center;
+    margin-top: 10em;
+    gap: 6em;
+    margin-bottom: 4em;
+}
+
+.mini h3{
+    padding: 1.2em 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #121127;
+}
+
+.mini p{
+    color: #1211278F;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#partners{
+    background: #F9F9FB;
+}
+
+#Assurance{
+    background: #F9F9FB
+}
+
+
+.partnership {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Wrap images if necessary */
+    gap: 8em; /* Space between images */
+    margin-top: 6em;
+}
+
+.partners {
+    display: flex;
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+    width: 130px; /* Set the width you prefer */
+    height: 100px; /* Set the height you prefer */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.partners img {
+    width: 100%; /* Scale image to container width */
+    height: 100%; /* Scale image to container height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+.partner-text {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within the paragraph */
+    gap: 16px; /* Space between the paragraph and the button */
+}
+
+.partner-text p {
+    margin: 0; 
+    width: 700px;
+    color: #121127;
+    padding-top: 2em;
+}
+
+.partner-text a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #005DFD;
+    padding: 8px 24px;
+    border: 1px solid #005DFD;
+    border-radius: 6px;
+    margin-top: 1.2em;
+    margin-bottom: 8em;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.abt-us{
+    display: flex;
+    align-items: center;    
+    gap: 1em;
+    margin: 8em 0;
+}
+
+.wwa h2{
+    color: #121127;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.wwa p{
+padding: 2em 0;
+color: #1211278F;
+}
+
+.wwa a{
+    gap: 6px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #005DFD;
+    padding: 6px 20px;
+    border: 1px solid #005DFD;
+    border-radius: 6px;
+    margin-top: 1.2em;
+    margin-bottom: 10em;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.more-wwa{
+    display: flex;   
+    align-items: center;
+    gap: 5em;
+    padding: 0 6em;
+}
+
+.more img{
+    margin-bottom: 1em;
+}
+
+.more h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.more p{
+padding: 1.2em 0;
+font-size: 14px;
+font-weight: 400;
+color: #1211278F;
+}
+
+
+.Assurance{
+    display: flex;
+    align-items: center;
+    gap: 6em;
+}
+
+.A-text{
+    width: 456px;
+}
+
+.A-text span{
+color: #005DFD;
+font-size: 14px;
+font-weight: 600;
+text-align: center;
+text-transform: uppercase;
+}
+
+.A-text h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #121127;
+    padding: 0.2em 0;
+}
+
+.A-text p{
+font-size: 16px;
+font-weight: 400px;
+color: #1211278F;
+}
+
+
+
+.relatively {
+    position: relative; 
+}
+
+.relatively img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.w-block {
+    position: absolute; 
+    bottom: -70%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80%; 
+    max-width: 936px; 
+    border: 1px solid #ffffff; 
+    border-radius: 16px; 
+    padding: 2em; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(18, 17, 39, 0.14);
+}
+
+.w-block span{
+    color: #005DFD;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 0.2em;
+}
+
+.flexy{
+    display: flex;
+    gap: 10em;
+}
+
+.flex {
+    width: 466px;
+}
+
+.flex h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #121127;
+    line-height: 56px;
+    padding: 0 0 0.8em;
+}
+.flex h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: #12112766;
+}
+
+.days span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #121127;
+}
+
+.mini-flex{
+    margin-top: 1em;
+}
+
+
+
+.m-flexs{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin-bottom: 1em;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1211278F;
+}
+
+
+footer {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 1em; 
+    margin: 24em 0 6em; 
+}
+
+footer p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #1211278F;
+}
+
+.social-links {
+    display: flex; 
+    gap: 3em; 
+    margin-bottom: 1.2em;
+}
+
+.social-links img {
+    width: 24px; 
+    height: 24px; 
+}
+
+
+
+
+
+
+
