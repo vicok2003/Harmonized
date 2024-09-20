@@ -15,16 +15,17 @@ body{
 
 #services{
     margin-top: 7em;
-    padding: 1em 2em; 
+
+    padding: 1em 3em;
 }
 
 
 #partners{
-    padding: 1em 2em; 
+    padding: 1em 3em; 
 }
 
 #about-us{
-    padding: 1em 2em; 
+    padding: 1em 3em; 
 }
 
 /* Flex the navhead and justify content */
@@ -33,7 +34,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    padding: 1em 2em; 
+    padding: 1em 3em; 
     background-color: white;
     transition: transform 0.3s ease, opacity 0.3s ease;
     width: 100%;
@@ -64,6 +65,10 @@ body{
     display: flex;
     align-items: center;
     gap: 20px; 
+}
+
+.hamburger {
+    display: none; /* Hide hamburger icon on large screens */
 }
 
 .nav-links a{
@@ -160,7 +165,7 @@ color: #121127B8;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     flex-wrap: wrap; /* Wrap images if necessary */
-    gap: 8em; /* Space between images */
+    gap: 7em; /* Space between images */
     margin-top: 6em;
 }
 
@@ -175,7 +180,7 @@ color: #121127B8;
 
 .partners img {
     width: 100%; /* Scale image to container width */
-    height: 100%; /* Scale image to container height */
+    height: 30px; /* Scale image to container height */
     object-fit: contain; /* Maintain aspect ratio */
 }
 
@@ -210,8 +215,7 @@ color: #121127B8;
 .abt-us{
     display: flex;
     align-items: center;    
-    gap: 1em;
-    margin: 8em 0;
+    margin: 6em 0;
 }
 
 .wwa h2{
@@ -242,8 +246,8 @@ color: #1211278F;
 .more-wwa{
     display: flex;   
     align-items: center;
-    gap: 5em;
-    padding: 0 6em;
+    gap: 6em;
+    padding: 0 8em;
 }
 
 .more img{
@@ -317,7 +321,7 @@ color: #1211278F;
     border-radius: 16px; 
     padding: 2em; 
     background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(18, 17, 39, 0.14);
+    box-shadow: 0px 20px 50px 0px rgba(18, 17, 39, 0.08);
 }
 
 .w-block span{
@@ -372,6 +376,11 @@ color: #1211278F;
     color: #1211278F;
 }
 
+.notepad-man{
+    width: 552px;
+    height: 425px;
+}
+
 
 footer {
     display: flex; 
@@ -379,7 +388,7 @@ footer {
     align-items: center; 
     justify-content: center; 
     padding: 1em; 
-    margin: 24em 0 6em; 
+    margin: 18em 0 4em; 
 }
 
 footer p{
@@ -400,6 +409,106 @@ footer p{
 }
 
 
+/* Mobile and Tablet Styles */
+@media (max-width: 1024px) {
+    /* Adjusting padding and spacing */
+    #services, #partners, #about-us {
+        padding: 1em;
+    }
+
+    .navhead {
+        padding: 1em; /* Adjust padding for smaller screens */
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
+        gap: 4px;
+    }
+
+    .hamburger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #121127;
+    }
+
+    /* Hide nav-links initially on mobile */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* Adjust logo and menu icon */
+    .navhead {
+        justify-content: space-between;
+    }
+
+    .navhead .logo {
+        flex: 1;
+    }
+
+    .navhead .hamburger {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    /* Billboard Section */
+    .billboard {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Hide content-2 image on mobile */
+    .content-2 {
+        display: none;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navhead {
+        display: flex;
+        
+        padding: 1em; 
+    }
+
+    .billboard h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .billboard p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .billboard a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Footer Adjustments */
+    footer {
+        padding: 2em;
+        margin: 6em 0 2em;
+    }
+}
 
 
 
