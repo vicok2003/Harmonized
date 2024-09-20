@@ -67,10 +67,6 @@ body{
     gap: 20px; 
 }
 
-.hamburger {
-    display: none; /* Hide hamburger icon on large screens */
-}
-
 .nav-links a{
     text-decoration: none;
     color: #121127B8;
@@ -162,10 +158,10 @@ color: #121127B8;
 
 .partnership {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-wrap: wrap; /* Wrap images if necessary */
-    gap: 7em; /* Space between images */
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 7em; 
     margin-top: 6em;
 }
 
@@ -407,23 +403,32 @@ footer p{
     width: 24px; 
     height: 24px; 
 }
+.menu-icon {
+    display: none; /* Show the icon by default */
+}
 
 
-/* Mobile and Tablet Styles */
-@media (max-width: 1024px) {
-    /* Adjusting padding and spacing */
+
+
+
+
+/* Mobile Styles */
+ @media (max-width: 768px) {
+    .menu-icon{
+        display: block;
+    }
+
     #services, #partners, #about-us {
         padding: 1em;
+        margin: 0;
     }
 
     .navhead {
-        padding: 1em; /* Adjust padding for smaller screens */
+        padding: 1em; 
     }
 
     .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+       display: block;
         width: 25px;
         height: 20px;
         cursor: pointer;
@@ -437,7 +442,6 @@ footer p{
         background-color: #121127;
     }
 
-    /* Hide nav-links initially on mobile */
     .nav-links {
         display: none;
         flex-direction: column;
@@ -454,7 +458,6 @@ footer p{
         display: flex;
     }
 
-    /* Adjust logo and menu icon */
     .navhead {
         justify-content: space-between;
     }
@@ -468,49 +471,192 @@ footer p{
         justify-content: flex-end;
     }
 
-    /* Billboard Section */
     .billboard {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    /* Hide content-2 image on mobile */
     .content-2 {
         display: none;
     }
-}
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .navhead {
+    .mini-boards{
         display: flex;
-        
-        padding: 1em; 
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 6em;
+        gap: 2em;
+        margin-bottom: 3em;
     }
 
-    .billboard h1 {
-        font-size: 32px;
-        line-height: 40px;
+    .mini h3{
+        padding: 1em 0;
     }
 
-    .billboard p {
-        font-size: 16px;
-        width: 100%;
+    .partnership {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-wrap: wrap; 
+        gap: 3em; 
+        margin-top: 2em;
     }
+    
+    .partners img {
+        width: 100%; /* Scale image to container width */
+        height: 30px; /* Scale image to container height */
+        object-fit: contain; /* Maintain aspect ratio */
+  }
 
-    .billboard a {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    /* Footer Adjustments */
-    footer {
-        padding: 2em;
-        margin: 6em 0 2em;
-    }
+  .partner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    gap: 16px; 
+    padding: 1em;
 }
 
+.partner-text p {
+    margin: 0; 
+    width: 700px;
+    color: #121127;
+    padding-top: 1em;
+}
+
+.abt-us{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    margin: 2em 0;
+    gap: 2em;
+}
+
+.more-wwa{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 1em;
+}
+
+.more img{
+    margin: 0;
+}
+
+.partner-text p{
+    width: 100%;
+}   
+
+.Assurance{
+    flex-wrap: wrap;
+    gap: 0;
+    width: 100%;
+    margin-bottom: 1.2em;
+}
+
+.A-text{
+    width: 100%;
+    padding: 1em;
+}
+
+.A-text span{
+    color: #005DFD;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    
+    .A-text h2{
+        font-size: 32px;
+        font-weight: 700;
+        color: #121127;
+        padding: 0.2em 0;
+    }
+    
+    .A-text p{
+    font-size: 16px;
+    font-weight: 400px;
+    color: #1211278F;
+    }
+
+.notepad-man{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.billboard{
+    width: 100%;
+    margin-top: 4em;
+}
+
+.content-1 h1{
+    width: 100%;
+    font-size: 40px;
+}
+
+.content-1 p{
+    width: 100%;
+    font-size: 16px;
+}
+
+.relatively{
+    position: static;
+}
+
+.relatively img{
+    display: none;
+}
+
+.w-block {
+    position: relative; /* Change to relative or static */
+    bottom: 0; /* Ensure it’s positioned properly */
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; /* Adjust width for better responsiveness */
+    max-width: 936px; 
+    margin: 0 auto; /* Center the block */
+    padding: 1em; /* Adjust padding for mobile */
+}
+.flexy {
+    flex-direction: column; /* Stack items vertically on mobile */
+    gap: 1.5em; /* Adjust gap for better spacing */
+}
+
+.flex {
+    width: auto; /* Allow flexibility */
+}
+
+.flex h2 {
+    font-size: 24px; /* Adjust font size for mobile */
+    line-height: 32px; /* Adjust line height */
+}
+
+.flex h1 {
+    font-size: 24px; 
+}
+
+.days {
+    margin-top: 1em; 
+}
+
+.days span {
+    font-size: 14px;
+}
+
+.m-flexs {
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 0.5em; 
+}
+
+footer{
+    margin: 2em 0 0;
+}
+
+} 
 
 
-
-
+ 
