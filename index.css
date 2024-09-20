@@ -493,19 +493,26 @@ footer p{
         padding: 1em 0;
     }
 
+    #partners{
+        padding: 0;
+    }
+
+    .partners{
+        height: 80px;
+        width: 80px;
+    }
     .partnership {
         display: flex;
         justify-content: center; 
         align-items: center; 
-        flex-wrap: wrap; 
-        gap: 3em; 
+        gap: 1em; 
         margin-top: 2em;
     }
     
     .partners img {
-        width: 100%; /* Scale image to container width */
-        height: 30px; /* Scale image to container height */
-        object-fit: contain; /* Maintain aspect ratio */
+        width: 100%; 
+        height: 30px; 
+        object-fit: contain; 
   }
 
   .partner-text {
@@ -530,6 +537,10 @@ footer p{
     align-items: center;    
     margin: 2em 0;
     gap: 2em;
+}
+
+.wwa p{
+    padding: 1em 0;
 }
 
 .more-wwa{
@@ -630,12 +641,13 @@ footer p{
 }
 
 .flex h2 {
-    font-size: 24px; /* Adjust font size for mobile */
-    line-height: 32px; /* Adjust line height */
+    padding-top: 0.4em;
+    font-size: 32px;
+    line-height: 32px;
 }
 
 .flex h1 {
-    font-size: 24px; 
+    font-size: 22px; 
 }
 
 .days {
@@ -647,9 +659,10 @@ footer p{
 }
 
 .m-flexs {
-    flex-direction: column; 
+    /* flex-direction: column;  */
     align-items: flex-start; 
     gap: 0.5em; 
+    width: 40%;
 }
 
 footer{
