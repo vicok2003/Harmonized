@@ -45,7 +45,16 @@
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 
+// Toggle the menu when the hamburger is clicked
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
+});
+
+// Close the menu when a link is clicked
+const links = navLinks.querySelectorAll('a');
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+    });
 });
 
